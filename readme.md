@@ -1,5 +1,5 @@
 # CryptoBox
-Small and lighweight cryptography toolbox collections such as hashing and encryption that can be compiled into specific algorithm that are needed
+A small and lightweight cryptography toolbox collections such as hashing and encryption that can be compiled into specific algorithm that are needed
 
 # Available Algorithm
 
