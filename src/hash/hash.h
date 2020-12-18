@@ -3,6 +3,7 @@
 
 #include <stdint.h>
 #include <iostream>
+#include "../helper/helper.h"
 
 namespace Hash {
     unsigned char* MD5(const char* input, uint64_t length);

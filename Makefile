@@ -9,15 +9,17 @@ CCFLAGS=-g -Wall
 ARFLAGS=rcs
 
 HASH_OBJ=md5.o
-
+HELPER_OBJ=helper.o
 TEST_OBJ=main.o
 
-OBJ=$(HASH_OBJ)
+OBJ=$(HELPER_OBJ) $(HASH_OBJ)
 
 HASH_DIR=$(wildcard src/hash/*.cpp)
+HELPER_DIR=$(wildcard src/helper/*.cpp)
 TEST_DIR=$(wildcard test/*.cpp)
 OBJS=$(addprefix $(OBJDIR), $(OBJ))
 HASH_OBJS=$(addprefix $(OBJDIR), $(HASH_OBJ))
+HELPER_OBJS=$(addprefix $(OBJDIR), $(HELPER_OBJ))
 TEST_OBJS=$(addprefix $(OBJDIR), $(TEST_OBJ))
 DEPS=Makefile
 
@@ -38,6 +40,9 @@ $(ALIB): $(OBJS)
 	$(AR) $(ARFLAGS) $@ $<
 
 $(HASH_OBJS): $(HASH_DIR)
+	$(CC) $(CCFLAGS) -c $< -o $@
+
+$(HELPER_OBJS): $(HELPER_DIR)
 	$(CC) $(CCFLAGS) -c $< -o $@
 
 obj:
