@@ -1,5 +1,5 @@
 # CryptoBox
-Cryptography algorithm collections such as hashing and encryption. The purpose of this project is create small, lightweight, and can be compiled into specific algorithm that are needed
+Small and lighweight cryptography toolbox collections such as hashing and encryption that can be compiled into specific algorithm that are needed
 
 # Available Algorithm
 
@@ -11,7 +11,7 @@ Cryptography algorithm collections such as hashing and encryption. The purpose o
 5. SHA-2 (soon)
 6. SHA-3 (soon)
 
-## Encryption & Decyption
+## Encryption & Decryption
 1. Base-32 (soon)
 2. Base-64 (soon)
 
@@ -21,6 +21,8 @@ Cryptography algorithm collections such as hashing and encryption. The purpose o
 
 ## Asymetric Encryption
 1. RSA (soon)
+
+
 
 
 
